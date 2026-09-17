@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-serif: 'DM Serif Display', 'Georgia', serif;
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.965 0.018 83);
+  --foreground: oklch(0.24 0.028 47);
+  --card: oklch(0.98 0.012 83);
+  --card-foreground: oklch(0.24 0.028 47);
+  --popover: oklch(0.98 0.012 83);
+  --popover-foreground: oklch(0.24 0.028 47);
+  --primary: oklch(0.27 0.04 48);
+  --primary-foreground: oklch(0.965 0.018 83);
+  --secondary: oklch(0.91 0.035 78);
+  --secondary-foreground: oklch(0.27 0.04 48);
+  --muted: oklch(0.91 0.035 78);
+  --muted-foreground: oklch(0.5 0.035 55);
+  --accent: oklch(0.62 0.115 43);
+  --accent-foreground: oklch(0.98 0.012 83);
+  --border: oklch(0.78 0.045 72);
+  --input: oklch(0.78 0.045 72);
+  --ring: oklch(0.62 0.115 43);
+  --radius: 0.2rem;
+}
+
+* { border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body { background: var(--background); color: var(--foreground); }
+button, a { transition-duration: 180ms; }
